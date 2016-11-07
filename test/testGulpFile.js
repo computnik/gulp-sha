@@ -5,11 +5,17 @@ var gulpSHA = require("../");
 var gulp = require("gulp");
 var mkdirp = require("mkdirp");
 
-var testSrc = "./input/**/*";
-var testDest = "./output";
-gulp.task("sha",function () {
+var testSrc = "./input/**/*"; // Path to input File
+var testDest = "./output"; // Path to Output directory
+var options = {
+  hashType: "SHA-256",
+  numRounds: 2,
+  useHmac: true,
+  hmacKey: "abc"
+};
+gulp.task("sha", function () {
   mkdirp.sync(testDest);
   return gulp.src(testSrc)
-    .pipe(gulpSHA({hashType:"SHA-1", numRounds:2, useHmac:true, hmacKey:"testkey"}))
+    .pipe(gulpSHA(options))
     .pipe(gulp.dest(testDest));
 });

@@ -1,0 +1,39 @@
+{
+  "name": "gulp-sha",
+  "version": "0.0.1",
+  "description": "Plugin to handle SHA with gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp sha --gulpfile test/testGulpFile.js"
+  },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/motnik/gulp-sha.git"
+  },
+  "keywords": [
+    "gulp",
+    "plugin",
+    "encrypt",
+    "decrypt",
+    "sha",
+    "jssha"
+  ],
+  "author": {
+    "name": "Nikhil Motiani",
+    "email": "nikhil.motiani@outlook.com",
+    "url": "https://github.com/motnik"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "jssha": "^2.2.0",
+    "mkdirp": "^0.5.1",
+    "mocha": "^3.1.2",
+    "through2": "^2.0.1"
+  },
+  "peerDependencies": {
+    "gulp": "^3.9.1",
+    "jssha": "^2.2.0",
+    "through2": "^2.0.1"
+  }
+}

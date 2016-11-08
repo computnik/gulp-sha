@@ -1,6 +1,6 @@
 {
   "name": "gulp-sha",
-  "version": "0.0.2-0",
+  "version": "0.1.0",
   "description": "[Gulp](http://gulpjs.com) plugin for hashing using propular SHA algorithms",
   "main": "./index.js",
   "homepage": "http://github.com/motnik/gulp-sha",

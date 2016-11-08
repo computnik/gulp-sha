@@ -1,8 +1,14 @@
 {
   "name": "gulp-sha",
   "version": "0.0.2-0",
-  "description": "Plugin to handle SHA with gulp",
-  "main": "index.js",
+  "description": "[Gulp](http://gulpjs.com) plugin for hashing using propular SHA algorithms",
+  "main": "./index.js",
+  "homepage": "http://github.com/motnik/gulp-sha",
+  "author": {
+    "name": "Nikhil Motiani",
+    "email": "nikhil.motiani@outlook.com",
+    "url": "https://github.com/motnik"
+  },
   "scripts": {
     "test": "gulp sha --gulpfile test/testGulpFile.js"
   },
@@ -10,20 +16,9 @@
     "type": "github",
     "url": "https://github.com/motnik/gulp-sha.git"
   },
-  "keywords": [
-    "gulp",
-    "plugin",
-    "encrypt",
-    "decrypt",
-    "sha",
-    "jssha"
-  ],
-  "author": {
-    "name": "Nikhil Motiani",
-    "email": "nikhil.motiani@outlook.com",
-    "url": "https://github.com/motnik"
+  "bugs": {
+    "url": "https://github.com/motnik/gulp-sha/issues"
   },
-  "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.1",
     "jssha": "^2.2.0",
@@ -32,12 +27,29 @@
     "through2": "^2.0.1"
   },
   "peerDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
     "jssha": "^2.2.0",
     "through2": "^2.0.1"
   },
   "engines": {
-    "node": ">=0.10",
-    "npm": ">=3.0"
-  }
+    "node": ">= 0.9.0"
+  },
+  "keywords": [
+    "gulp",
+    "gulpplugin",
+    "gulp-plugin",
+    "plugin",
+    "hash",
+    "hmac",
+    "hmac",
+    "encrypt",
+    "decrypt",
+    "sha",
+    "jssha",
+    "js",
+    "javascript"
+  ],
+  "license": "MIT"
 }

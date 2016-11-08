@@ -6,7 +6,7 @@ module.exports = function (options) {
   var hashType = options.hashType === undefined ? "SHA-256" : options.hashType;
   var encoding = options.encoding === undefined ? "UTF8" : options.encoding;
   var inputType = options.inputType === undefined ? "TEXT" : options.inputType;
-  var format = options.format === undefined ? "HEX" : options.format;
+  var outputType = options.outputType === undefined ? "HEX" : options.outputType;
   var numRounds = options.numRounds === undefined ? 1 : options.numRounds;
   var outputUpper = options.outputUpper === undefined ? false : options.outputUpper;
   var b64Pad = options.b64Pad === undefined ? "=" : options.b64Pad;
@@ -25,10 +25,10 @@ module.exports = function (options) {
     if (useHmac) {
       shaObj.setHMACKey(HMACKey, HMACType, {encoding: encoding, numRounds: numRounds});
       shaObj.update(content);
-      result = shaObj.getHMAC(format, {outputUpper: outputUpper, b64Pad: b64Pad, shakeLen: shakeLen});
+      result = shaObj.getHMAC(outputType, {outputUpper: outputUpper, b64Pad: b64Pad, shakeLen: shakeLen});
     } else {
       shaObj.update(content);
-      result = shaObj.getHash(format, {outputUpper: outputUpper, b64Pad: b64Pad, shakeLen: shakeLen});
+      result = shaObj.getHash(outputType, {outputUpper: outputUpper, b64Pad: b64Pad, shakeLen: shakeLen});
     }
     file.contents = new Buffer(result);
     callback(null, file);

@@ -1,7 +1,7 @@
 # gulp-sha
 Library to handle SHA with gulp
 
-[![NPM version](https://img.shields.io/npm/v/gulp-sha.svg?style=flat)](https://www.npmjs.com/package/gulp-sha)
+[![NPM version][npm-image]][npm-url] [![node][node-image]][npm-url] [![GitHub tag][github-tag-image]][github-url]
 
 > A [gulp](https://github.com/gulpjs/gulp) plugin to gulpSHA a file contents.
 
@@ -56,3 +56,10 @@ c7716ed373d76c4a1a4f8c1b622c6955838cab6fd2260824845dc599bd03a5b0
 ## License
 
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)
+
+[npm-url]: https://www.npmjs.com/package/gulp-sha
+[npm-image]: https://img.shields.io/npm/v/gulp-sha.svg
+[node-image]: https://img.shields.io/node/v/gulp-sha.svg
+
+[github-url]:https://github.com/motnik/gulp-sha
+[github-tag-image]: https://img.shields.io/github/tag/motnik/gulp-sha.svg

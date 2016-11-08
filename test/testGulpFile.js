@@ -8,8 +8,8 @@ var mkdirp = require("mkdirp");
 var testSrc = "./input/**/*"; // Path to input File
 var testDest = "./output"; // Path to Output directory
 var options = {
-  hashType: "SHA-256",
-  numRounds: 2,
+  hashType: "SHA-1",
+  numRounds: 1,
   useHmac: true,
   hmacKey: "abc"
 };

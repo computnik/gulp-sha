@@ -30,7 +30,7 @@ module.exports = function (options) {
       shaObj.update(content);
       result = shaObj.getHash(outputType, {outputUpper: outputUpper, b64Pad: b64Pad, shakeLen: shakeLen});
     }
-    file.contents = new Buffer(result);
+    file.contents = Buffer.from(result);
     callback(null, file);
   });
 };

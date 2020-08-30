@@ -20,18 +20,16 @@
     "url": "https://github.com/motnik/gulp-sha/issues"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "jssha": "^2.2.0",
-    "mkdirp": "^0.5.1",
-    "mocha": "^3.1.2",
-    "through2": "^2.0.1"
+    "gulp": "^4.0.2",
+    "mkdirp": "^1.0.4",
+    "mocha": "^8.1.3"
   },
   "peerDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^4.0.2"
   },
   "dependencies": {
-    "jssha": "^2.2.0",
-    "through2": "^2.0.1"
+    "jssha": "^3.1.2",
+    "through2": "^4.0.2"
   },
   "engines": {
     "node": ">= 0.9.0"

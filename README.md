@@ -4,21 +4,12 @@ Library to handle SHA with gulp
 > [Gulp](http://gulpjs.com) plugin for hashing using popular SHA algorithms.
 
 ## Information
-
-<table>
-    <tr>
-        <td>Package</td>
-        <td>gulp-sha</td>
-    </tr>
-    <tr>
-        <td>Node Version</td>
-        <td>>= 0.10.0</td>
-    </tr>
-    <tr>
-        <td>Gulp Version</td>
-        <td>3.x</td>
-    </tr>
-</table>
+| Package                | **gulp-sha**                                                        |
+| ---------------------- | ------------------------------------------------------------------- |
+| Version                | [v0.2.1](https://github.com/computnik/gulp-sha/releases/tag/v0.2.1) |
+| Node Version Supported | >= 0.10.0                                                           |
+| Gulp Version Supported | 4.x                                                                 |
+| Author                 | [@computnik](https://github.com/computnik)                          |
 
 ## Usage
 
@@ -43,6 +34,7 @@ This is a dummy File
 #### GulpFile
 
 ```javascript
+var gulp = require("gulp");
 var gulpSHA = require("gulp-sha");
 var inputFile="./inputFile"; // Path to input File
 var outputDir="./"; // Path to Output directory

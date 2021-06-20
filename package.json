@@ -3,21 +3,21 @@
   "version": "0.2.0",
   "description": "[Gulp](http://gulpjs.com) plugin for hashing using propular SHA algorithms",
   "main": "./index.js",
-  "homepage": "http://github.com/motnik/gulp-sha",
+  "homepage": "http://github.com/computnik/gulp-sha",
   "author": {
     "name": "Nikhil Motiani",
-    "email": "nikhil.motiani@outlook.com",
-    "url": "https://github.com/motnik"
+    "email": "motianinikhil@gmail.com",
+    "url": "https://github.com/computnik"
   },
   "scripts": {
     "test": "gulp sha --gulpfile test/testGulpFile.js"
   },
   "repository": {
     "type": "github",
-    "url": "https://github.com/motnik/gulp-sha.git"
+    "url": "https://github.com/computnik/gulp-sha.git"
   },
   "bugs": {
-    "url": "https://github.com/motnik/gulp-sha/issues"
+    "url": "https://github.com/computnik/gulp-sha/issues"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
@@ -32,7 +32,7 @@
     "through2": "^4.0.2"
   },
   "engines": {
-    "node": ">= 0.9.0"
+    "node": ">= 0.10.0"
   },
   "keywords": [
     "gulp",
